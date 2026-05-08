@@ -982,7 +982,7 @@ img {
 
 .wave-divider svg {
     display: block;
-    width: 100%;
+    width: 99.9%;
     height: auto;
     vertical-align: middle;
 }
