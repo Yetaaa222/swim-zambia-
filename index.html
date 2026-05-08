@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swim Zambia Academy</title>
-    <link rel="icon" href="assets/ref.png"/link>
-    <!-- Google Fonts -->
+    <link rel="icon" href="assets/ref.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
-    <!-- Lucide Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&display=swap"
+        rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <!-- Navigation -->
+
+    <!-- ── Navigation ── -->
     <nav class="navbar" id="navbar">
         <div class="container navbar-content">
             <div class="logo">
-                <img src="logo.png" alt="Swim Zambia Academy Logo" class="logo-img">
+                <a href="#hero"><img src="logo.png" alt="Swim Zambia Academy Logo" class="logo-img"></a>
             </div>
             <ul class="nav-links" id="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#safety">Safety</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#news">News</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="#location">Location</a></li>
             </ul>
             <div class="nav-actions">
-                <a href="#book" class="btn btn-gold btn-pill">Book Now</a>
+                <a href="#book" class="btn btn-gold btn-pill" data-tier="">Book Now</a>
                 <button class="mobile-toggle" id="mobile-toggle">
                     <i data-lucide="menu"></i>
                 </button>
@@ -37,45 +40,49 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero">
+    <!-- ── Hero ── -->
+    <header class="hero" id="hero">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
+            <p class="hero-eyebrow">Lusaka's Premier Swimming Academy</p>
             <h1 class="hero-title">Dive Into Your <br><span class="highlight">Best Self</span></h1>
+            <p class="hero-subtitle">Expert coaching for all ages at Lilayi Pool — building confidence, technique, and
+                champions.</p>
             <div class="hero-ctas">
-                <a href="#courses" class="btn btn-aqua btn-pill">View Courses</a>
+                <a href="#pricing" class="btn btn-aqua btn-pill">View Courses</a>
                 <a href="#contact" class="btn btn-outline btn-pill">Contact Us</a>
             </div>
         </div>
-        <!-- Stats Strip -->
         <div class="stats-strip-container">
             <div class="stats-strip frosted">
                 <div class="stat-item">
-                    <span class="stat-number">500+</span>
+                    <span class="stat-number" data-target="500" data-suffix="+">500+</span>
                     <span class="stat-label">Students</span>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat-item">
-                    <span class="stat-number">4.9★</span>
+                    <span class="stat-number" data-target="4" data-suffix=".9★">4.9★</span>
                     <span class="stat-label">Rating</span>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat-item">
-                    <span class="stat-number">3</span>
-                    <span class="stat-label">Course Levels</span>
+                    <span class="stat-number" data-target="4" data-suffix="">4</span>
+                    <span class="stat-label">Course Levels</1span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="8" data-suffix="">8</span>
+                    <span class="stat-label">Years Running</span>
                 </div>
             </div>
         </div>
     </header>
 
     <main>
-        <!-- Why Choose Us -->
+
+        <!-- ── Why Choose Us ── -->
         <section id="about" class="section why-choose">
-            <div class="wave-divider top-hero">
-                <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 0L1440 0V48C1380 53.3 1260 64 1140 74.7C1020 85.3 900 96 780 85.3C660 74.7 540 42.7 420 32C300 21.3 180 32 120 37.3L0 42.7V0Z" fill="#003F6B"/>
-                </svg>
-            </div>
+
             <div class="container">
                 <h2 class="section-title">Why Choose Us</h2>
                 <div class="grid grid-3">
@@ -98,142 +105,310 @@
             </div>
         </section>
 
-        <!-- Safety Section -->
-        <section id="safety" class="section safety">
-            <div class="wave-divider top">
-                <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 0L1440 0V120C1380 110 1260 90 1140 85C1020 80 900 90 780 100C660 110 540 120 420 115C300 110 180 90 120 80L0 70V0Z" fill="#F8FAFC"/>
-                </svg>
-            </div>
-            <div class="container grid grid-2-col">
-                <div class="safety-image-container">
-                    <div class="aqua-frame">
-                        <img src="safety.jpg" alt="Safety at Lilayi Pool" class="safety-img">
+        <!-- ── Swim Journey ── -->
+        <section id="safety" class="section journey-section">
+            <div class="container">
+                <div class="journey-container">
+                    <div class="journey-content">
+                        <h2 class="journey-title">Your Child's Swim <br>Journey</h2>
+                        <p class="journey-text">A lifetime of water safety starts here! With eight levels of
+                            progression, your child will embark on a journey of safe and confident swimming for life.
+                            Learn more about our swim lessons or select our easy-to-use Level Finder to discover where
+                            your child will begin.</p>
                     </div>
-                </div>
-                <div class="safety-content">
-                    <h2 class="section-title left">Safety First</h2>
-                    <p>At Swim Zambia Academy, your safety is our top priority. Our facilities at Lilayi Pool are equipped with modern safety gear, and all our instructors are lifeguard certified.</p>
-                    <ul class="check-list">
-                        <li><i data-lucide="check-circle" class="check-icon"></i> Certified Lifeguards on duty</li>
-                        <li><i data-lucide="check-circle" class="check-icon"></i> Clean and sanitized pool water</li>
-                        <li><i data-lucide="check-circle" class="check-icon"></i> Safety drills and protocols</li>
-                    </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Pricing Section -->
+        <!-- ── Pricing ── -->
         <section id="pricing" class="section pricing dark-navy">
             <div class="wave-divider top">
                 <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 0L1440 0V48C1380 53.3 1260 64 1140 74.7C1020 85.3 900 96 780 85.3C660 74.7 540 42.7 420 32C300 21.3 180 32 120 37.3L0 42.7V0Z" fill="#FFFFFF"/>
+                    <path
+                        d="M0 0L1440 0V48C1380 53.3 1260 64 1140 74.7C1020 85.3 900 96 780 85.3C660 74.7 540 42.7 420 32C300 21.3 180 32 120 37.3L0 42.7V0Z"
+                        fill="#FFFFFF" />
                 </svg>
             </div>
             <div class="container">
-                <h2 class="section-title light">Our Programs</h2>
-                <div class="grid grid-3">
+                <h2 class="section-title light">Session Packages</h2>
+                <div class="grid grid-4">
                     <div class="price-card">
-                        <span class="price-tier">Starter</span>
-                        <div class="price">K1,000</div>
+                        <span class="price-tier">Single Session</span>
+                        <div class="price">K300 <small style="font-size: 0.9rem; opacity: 0.7;">Lsk Club</small></div>
                         <ul class="price-features">
-                            <li>4 Sessions / Month</li>
-                            <li>Basic Techniques</li>
-                            <li>Small Group Classes</li>
+                            <li>Lusaka Club: <strong>K300</strong></li>
+                            <li>DK / Makeni: <strong>K250</strong></li>
+                            <li>Flexible Booking</li>
                         </ul>
-                        <a href="#book" class="btn btn-outline btn-pill">Choose Starter</a>
+                        <a href="#book" class="btn btn-outline btn-pill" data-tier="Single Session">Book Now</a>
+                    </div>
+                    <div class="price-card">
+                        <span class="price-tier">8 Sessions</span>
+                        <div class="price">K1,500 <small style="font-size: 0.9rem; opacity: 0.7;">Lsk Club</small></div>
+                        <ul class="price-features">
+                            <li>Lusaka Club: <strong>K1,500</strong></li>
+                            <li>DK / Makeni: <strong>K1,300</strong></li>
+                            <li>Progress Tracking</li>
+                        </ul>
+                        <a href="#book" class="btn btn-outline btn-pill" data-tier="8 Sessions">Choose Plan</a>
                     </div>
                     <div class="price-card best-seller">
-                        <span class="badge gold-badge">Best Seller</span>
-                        <span class="price-tier">Pro</span>
-                        <div class="price">K1,500</div>
+                        <span class="badge gold-badge">Most Popular</span>
+                        <span class="price-tier">12 Sessions</span>
+                        <div class="price">K1,900 <small style="font-size: 0.9rem; opacity: 0.7;">Lsk Club</small></div>
                         <ul class="price-features">
-                            <li>8 Sessions / Month</li>
-                            <li>Intermediate Skills</li>
-                            <li>Individual Feedback</li>
+                            <li>Lusaka Club: <strong>K1,900</strong></li>
+                            <li>DK / Makeni: <strong>K1,600</strong></li>
+                            <li>Technique Analysis</li>
                         </ul>
-                        <a href="#book" class="btn btn-gold btn-pill">Choose Pro</a>
+                        <a href="#book" class="btn btn-gold btn-pill" data-tier="12 Sessions">Choose Plan</a>
                     </div>
                     <div class="price-card">
-                        <span class="price-tier">Hero</span>
-                        <div class="price">K2,500</div>
+                        <span class="price-tier">25 Sessions</span>
+                        <div class="price">K3,000 <small style="font-size: 0.9rem; opacity: 0.7;">Lsk Club</small></div>
                         <ul class="price-features">
-                            <li>Unlimited Sessions</li>
-                            <li>Competitive Coaching</li>
-                            <li>Priority Booking</li>
+                            <li>Lusaka Club: <strong>K3,000</strong></li>
+                            <li>DK / Makeni: <strong>K2,700</strong></li>
+                            <li>Elite Performance</li>
                         </ul>
-                        <a href="#book" class="btn btn-outline btn-pill">Choose Hero</a>
+                        <a href="#book" class="btn btn-outline btn-pill" data-tier="25 Sessions">Go Pro</a>
                     </div>
                 </div>
+                <p
+                    style="text-align: center; color: var(--white); opacity: 0.6; margin-top: 2.5rem; font-size: 0.95rem;">
+                    * Prices vary by venue. Lusaka Club, David Kaunda (DK), and Makeni Pool supported.
+                </p>
             </div>
         </section>
 
-        <!-- News Section -->
+        <!-- ── News ── -->
         <section id="news" class="section news">
             <div class="wave-divider top">
                 <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 0L1440 0V48C1380 53.3 1260 64 1140 74.7C1020 85.3 900 96 780 85.3C660 74.7 540 42.7 420 32C300 21.3 180 32 120 37.3L0 42.7V0Z" fill="#001F33"/>
+                    <path
+                        d="M0 0L1440 0V48C1380 53.3 1260 64 1140 74.7C1020 85.3 900 96 780 85.3C660 74.7 540 42.7 420 32C300 21.3 180 32 120 37.3L0 42.7V0Z"
+                        fill="#001F33" />
                 </svg>
             </div>
             <div class="container">
                 <h2 class="section-title">Latest Updates</h2>
-                <div class="grid grid-3">
-                    <article class="news-card">
-                        <img  src="assets/stroke.jpg">
+
+                <!-- Filter Buttons -->
+                <div class="filter-bar">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="tips">Tips</button>
+                    <button class="filter-btn" data-filter="events">events</button>
+                    <button class="filter-btn" data-filter="academy">Academy</button>
+                </div>
+
+                <div class="grid grid-3" id="news-grid">
+                    <article class="news-card" data-tag="tips">
+                        <div class="news-img-wrapper">
+                            <img src="assets/stroke.jpg" alt="Improving Your Stroke">
                             <span class="tag">Tips</span>
-                        </img>
+                        </div>
                         <div class="news-body">
                             <h3>Improving Your Stroke</h3>
                             <p>Discover 5 techniques to improve your swimming efficiency this season.</p>
+                            <button class="read-more-btn" onclick="openNewsModal(this)"
+                                data-title="Improving Your Stroke"
+                                data-content="Focus on body rotation, keep your head neutral, and drive from your hips. Consistent drills like catch-up and fingertip drag will transform your form in weeks. By mastering these fundamentals, you'll reduce drag and increase your power output, leading to faster times and less fatigue during long sessions.">
+                                Read More <i data-lucide="chevron-right"></i>
+                            </button>
                         </div>
                     </article>
-                    <article class="news-card">
-                        <img src="assets/pool.png">
-                            <span class="tag">Projects</span>
-                    </img>
+                    <article class="news-card" data-tag="events">
+                        <div class="news-img-wrapper">
+                            <img src="assets/events.jpg" alt="New Pools">
+                            <span class="tag">events</span>
+                        </div>
                         <div class="news-body">
-                            <h3>New Pools</h3>
-                            <p>Have a look at the transformation of our pool</p>
+                            <h3>🌊 International Learn to Swim Week – FREE Sessions! 🏊‍♂️</h3>
+                            <p>We’re excited to invite all our valued customers to join us for International Learn to
+                                Swim Week!</p>
+                            <button class="read-more-btn" onclick="openNewsModal(this)"
+                                data-title="🌊 International Learn to Swim Week – FREE Sessions! 🏊‍♂️"
+                                data-content="🎉 Enjoy FREE swimming lessons for all ages and skill levels – whether you’re just starting out or looking to build confidence in the water.<br><br>📍 Venues:<br>- Lusaka Club<br>- David Kaunda Technical School<br><br>This is a perfect opportunity to learn an essential life skill in a safe, fun, and supportive environment. Mark your calendars and bring your friends and family along!<br><br>Registration is only K100! 🔥🔥 #RegistrationDepartment">
+                                Read More <i data-lucide="chevron-right"></i>
+                            </button>
                         </div>
                     </article>
-                    <article class="news-card">
-                        <img src="assets/promo.jpg">
+                    <article class="news-card" data-tag="academy">
+                        <div class="news-img-wrapper">
+                            <img src="assets/promo.jpg" alt="Holiday Program">
                             <span class="tag">Academy</span>
-                        </img>
+                        </div>
                         <div class="news-body">
                             <h3>Holiday Swimming Program</h3>
-                            <p>Join our holiday swimming lessons and invest in a lifelong skill. Registration is still open, sign up today to gain confidence and freedom.</p>
+                            <p>Join our holiday lessons and invest in a lifelong skill. Registration is open.</p>
+                            <button class="read-more-btn" onclick="openNewsModal(this)"
+                                data-title="Holiday Swimming Program"
+                                data-content="The holiday program runs for 3 weeks and includes daily 1-hour sessions. Places are limited to 12 students per group to ensure quality coaching. Our program covers everything from basic water safety to advanced stroke techniques, making it suitable for all levels of junior swimmers. Sign up today to secure your spot!">
+                                Read More <i data-lucide="chevron-right"></i>
+                            </button>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- Banner CTA -->
-        <section class="banner-cta">
-            <div class="container banner-content">
-                <h2>Join the Elite at Lilayi Pool</h2>
-                <p>Limited spots available for the new semester.</p>
-                <a href="#book" class="btn btn-gold btn-pill">Secure Your Spot</a>
-            </div>
-        </section>
-        <!-- Location Section -->
-        <section id="location" class="section location">
+        <!-- ── Testimonials ── -->
+        <section id="testimonials" class="section testimonials dark-navy">
             <div class="wave-divider top">
                 <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 0L1440 0V48C1380 53.3 1260 64 1140 74.7C1020 85.3 900 96 780 85.3C660 74.7 540 42.7 420 32C300 21.3 180 32 120 37.3L0 42.7V0Z" fill="#003F6B"/>
+                    <path
+                        d="M0 0L1440 0V48C1380 53.3 1260 64 1140 74.7C1020 85.3 900 96 780 85.3C660 74.7 540 42.7 420 32C300 21.3 180 32 120 37.3L0 42.7V0Z"
+                        fill="#F8FAFC" />
+                </svg>
+            </div>
+            <div class="container">
+                <h2 class="section-title light">What Our Students Say</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial-slide">
+                        <div class="stars">★★★★★</div>
+                        <p class="quote">"My daughter went from being afraid of water to swimming competitively in just
+                            6 months. The coaches at Swim Zambia are incredible ,patient, professional, and genuinely
+                            caring."</p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">CK</div>
+                            <div>
+                                <strong>Chanda K.</strong>
+                                <span>Parent</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="stars">★★★★★</div>
+                        <p class="quote">"The session packages are great value. I started with 8 sessions and have
+                            already seen massive improvement in my technique."</p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">TM</div>
+                            <div>
+                                <strong>Temwa M.</strong>
+                                <span>Student</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="stars">★★★★★</div>
+                        <p class="quote">"Elite performance training here is top-notch. The 25-session plan is the best
+                            investment I've made for my swimming career."</p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">BL</div>
+                            <div>
+                                <strong>Bwalya L.</strong>
+                                <span>Competitive Swimmer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn" id="prev-btn"><i data-lucide="arrow-left"></i></button>
+                    <div class="dots">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="slider-btn" id="next-btn"><i data-lucide="arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── FAQ ── -->
+        <section id="faq" class="section faq">
+            <div class="wave-divider top">
+                <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 0L1440 0V48C1380 53.3 1260 64 1140 74.7C1020 85.3 900 96 780 85.3C660 74.7 540 42.7 420 32C300 21.3 180 32 120 37.3L0 42.7V0Z"
+                        fill="#001F33" />
+                </svg>
+            </div>
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question">Where are the classes conducted? <i
+                                data-lucide="plus"></i></button>
+                        <div class="faq-answer">
+                            <p>We conduct classes at Lusaka Sports Club, David Kaunda (DK) Technical School, and Makeni
+                                Pool.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Are there any classes for adults? <i
+                                data-lucide="plus"></i></button>
+                        <div class="faq-answer">
+                            <p>Yes! Our program caters to all ages, including specialized lessons for adults.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">What are your working hours? <i data-lucide="plus"></i></button>
+                        <div class="faq-answer">
+                            <p>We are open from Monday to Saturday, 8:00 AM to 6:00 PM.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">What is the starting age for kids? <i
+                                data-lucide="plus"></i></button>
+                        <div class="faq-answer">
+                            <p>Kids as young as 3 years old are eligible to join our programs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ── Contact Banner ── -->
+
+        <section id="testimonials" class="section testimonials dark-navy">
+            <div class="wave-divider top">
+                <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 0L1440 0V48C1380 53.3 1260 64 1140 74.7C1020 85.3 900 96 780 85.3C660 74.7 540 42.7 420 32C300 21.3 180 32 120 37.3L0 42.7V0Z"
+                        fill="#F8FAFC" />
+                </svg>
+            </div>
+
+            <div class="container">
+                <div class="grid grid-2-col">
+                    <div>
+                        <h2 class="section-title left light">Have Questions?</h2>
+                        <p style="color: rgba(255,255,255,0.8); margin-bottom: 2rem;">Send us an email directly to <a
+                                href="mailto:info@swimzambiaacademy.com"
+                                style="color: var(--secondary); font-weight: 700;">info@swimzambiaacademy.com</a> or use
+                            the form, and we'll get back to you shortly.</p>
+                    </div>
+                    <form
+                        onsubmit="event.preventDefault(); alert('Message sent to info@swimzambiaacademy.com!'); this.reset();"
+                        style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 20px; border: 1px solid rgba(255,255,255,0.1);">
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required
+                                style="background: rgba(255,255,255,0.1); color: white; border-color: rgba(255,255,255,0.2);">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="How can we help?" rows="3" required
+                                style="background: rgba(255,255,255,0.1); color: white; border-color: rgba(255,255,255,0.2);"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-gold btn-pill" style="width: 100%;">Send Email</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Location ── -->
+        <section id="faq" class="section faq">
+            <div class="wave-divider top">
+                <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 0L1440 0V48C1380 53.3 1260 64 1140 74.7C1020 85.3 900 96 780 85.3C660 74.7 540 42.7 420 32C300 21.3 180 32 120 37.3L0 42.7V0Z"
+                        fill="#001F33" />
                 </svg>
             </div>
             <div class="container">
                 <h2 class="section-title">Find Us</h2>
                 <div class="map-wrapper">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3844.698711477755!2d28.31344007513012!3d-15.419084985169428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTXCsDI1JzA4LjciUyAyOMKwMTgnNTcuNyJF!5e0!3m2!1sen!2szm!4v1714562000000!5m2!1sen!2szm" 
-                        width="100%" 
-                        height="450" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3844.698711477755!2d28.31344007513012!3d-15.419084985169428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTXCsDI1JzA4LjciUyAyOMKwMTgnNTcuNyJF!5e0!3m2!1sen!2szm!4v1714562000000!5m2!1sen!2szm"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
@@ -241,11 +416,13 @@
         </section>
     </main>
 
-    <!-- Footer -->
+    <!-- ── Footer ── -->
     <footer class="footer dark-navy">
         <div class="wave-divider top">
             <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 48L60 42.7C120 37 240 27 360 37.3C480 48 600 80 720 90.7C840 101 960 91 1080 80C1200 69 1320 59 1380 53.3L1440 48V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0V48Z" fill="#001F33"/>
+                <path
+                    d="M0 0L1440 0V48C1380 53.3 1260 64 1140 74.7C1020 85.3 900 96 780 85.3C660 74.7 540 42.7 420 32C300 21.3 180 32 120 37.3L0 42.7V0Z"
+                    fill="#001F33" />
             </svg>
         </div>
         <div class="container footer-grid">
@@ -259,13 +436,17 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#safety">Safety</a></li>
                     <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#faq">FAQ</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
                 <h4>Contact</h4>
                 <p>Lilayi Pool, Lusaka</p>
                 <p><a href="mailto:info@swimzambiaacademy.com">info@swimzambiaacademy.com</a></p>
-                <p>+260 973548489</p>
+                <p>+260 973 548 489</p>
+                <p>+260 977 618 132</p>
+                <p>+260 973 007 490</p>
             </div>
         </div>
         <div class="container footer-bottom">
@@ -273,15 +454,92 @@
         </div>
     </footer>
 
-
-    <a href="https://wa.me/260973548489<" class="whatsapp-btn" target="_blank">
+    <!-- ── WhatsApp Floating Button ── -->
+    <a href="https://wa.me/260973548489" class="whatsapp-btn" target="_blank" title="Chat on WhatsApp">
         <i data-lucide="message-circle"></i>
     </a>
 
-    <!-- Custom JS -->
+    <!-- ── Booking Modal ── -->
+    <div class="modal-overlay" id="booking-modal">
+        <div class="modal">
+            <button class="modal-close" id="modal-close"><i data-lucide="x"></i></button>
+            <h2>Book Your Spot</h2>
+            <p class="modal-sub">Fill in your details and we'll confirm within 24 hours.</p>
+            <form id="booking-form">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="e.g. Chanda Banda" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" placeholder="+260 9XX XXX XXX" required>
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="you@example.com">
+                </div>
+                <div class="form-group">
+                    <label>Program</label>
+                    <select id="modal-tier">
+                        <option value="">Select a plan...</option>
+                        <option value="Single Session">Single Session</option>
+                        <option value="8 Sessions">8 Sessions</option>
+                        <option value="12 Sessions">12 Sessions</option>
+                        <option value="25 Sessions">25 Sessions</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Message (Optional)</label>
+                    <textarea placeholder="Any questions or special requirements?" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-gold btn-pill" style="width:100%">Submit Enquiry</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ── News Modal ── -->
+    <div class="modal-overlay" id="news-modal">
+        <div class="modal">
+            <button class="modal-close" id="news-modal-close"><i data-lucide="x"></i></button>
+            <h2 id="news-modal-title">News Title</h2>
+            <div id="news-modal-content" style="margin-top: 1.5rem; line-height: 1.8; color: #555;">
+                <!-- Content goes here -->
+            </div>
+            <button class="btn btn-gold btn-pill" style="margin-top: 2rem; width: 100%;"
+                onclick="closeNewsModal()">Close</button>
+        </div>
+    </div>
+
     <script src="js/main.js"></script>
     <script>
         lucide.createIcons();
+
+        function openNewsModal(btn) {
+            const modal = document.getElementById('news-modal');
+            const title = btn.getAttribute('data-title');
+            const content = btn.getAttribute('data-content');
+
+            document.getElementById('news-modal-title').innerText = title;
+            document.getElementById('news-modal-content').innerHTML = content;
+
+            modal.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeNewsModal() {
+            const modal = document.getElementById('news-modal');
+            modal.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        // Close on overlay click
+        document.getElementById('news-modal').addEventListener('click', (e) => {
+            if (e.target.id === 'news-modal') closeNewsModal();
+        });
+
+        // Close on X click
+        document.getElementById('news-modal-close').addEventListener('click', closeNewsModal);
     </script>
 </body>
+
 </html>
